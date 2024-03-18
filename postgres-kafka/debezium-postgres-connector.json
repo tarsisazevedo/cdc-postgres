@@ -1,0 +1,14 @@
+{
+    "name": "cdc-using-debezium-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "database.hostname": "192.168.5.53",
+        "database.port": "5443",
+        "database.user": "postgres",
+        "database.password": "123",
+        "database.dbname": "cdc-using-debezium",
+        "database.server.id": "184054",
+        "table.include.list": "public.User",
+        "topic.prefix": "cdc-using-debezium-topic"
+    }
+}
